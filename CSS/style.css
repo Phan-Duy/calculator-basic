@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.calculator {
+  border: 2px solid blue;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: blue;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+p {
+  margin-top: 20px;
+  text-align: left;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+
+.label-box {
+  pointer-events: none;
+  background-color: rgb(225, 225, 225);
+  border: 1px solid rgb(168, 168, 168);
+}
+
+/* .error{
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+} */
+
+.Invoice-subtotal {
+  /* margin-bottom: 30px; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.percent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.discount {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.percent input {
+  padding-right: 20px;
+  width: calc(100% - 176px);
+}
+
+.percent::after {
+  content: "%";
+  position: absolute;
+  right: 38%;
+  top: 54%;
+  transform: translateY(-50%);
+  color: #000;
+}
+
+input,
+select {
+  margin: 5px 0;
+  padding: 5px;
+  width: calc(100% - 160px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 20px;
+  margin-left: 70px;
+  width: 150px;
+  padding: 10px 20px;
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkblue;
+}

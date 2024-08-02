@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice Total Calculator</title>
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>Invoice Total Calculator</h1>
+      <br />
+      <p>Enter the two values that follow and click "Calculate".</p>
+      <br />
+      <form id="calculator-form">
+        <label for="customer-type">Customer Type:</label>
+        <select name="customer-type" id="customer-type">
+          <option value="vip">Vip</option>
+          <option value="subvip">Subvip</option>
+          <option value="normal">Normak</option>
+        </select>
+        <br />
+        <br />
+        <div class="Invoice-subtotal">
+          <label for="subtotal">Invoice Subtotal:</label>
+          <input type="text" id="subtotal" />
+          <!-- <span id="subtotal-error" class="error"></span> -->
+        </div>
+        <br />
+        -------------------------------------------------------------------------
+        <br />
+        <br />
+        <div class="percent">
+          <label for="percent">Discount Percent:</label>
+          <input type="text" class="label-box" id="percent" readonly />
+        </div>
+        <br />
+        <div class="discount">
+          <label for="discount">Discount Amount:</label>
+          <input type="text" class="label-box" id="discount" readonly />
+        </div>
+        <br />
+        <div class="total">
+          <label for="total">Invoice Total:</label>
+          <input type="text" class="label-box" id="total" readonly />
+        </div>
+        <br />
+
+        <button type="button" id="Calculate" onclick="calculateTotal">
+          Calculate
+        </button>
+      </form>
+    </div>
+    <script src="./Script/index.js" defer></script>
+  </body>
+</html>
